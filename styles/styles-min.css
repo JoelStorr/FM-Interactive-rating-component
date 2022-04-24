@@ -54,7 +54,7 @@ body{
 .rating-state{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 32px;
 }
 
@@ -92,10 +92,10 @@ input[type="radio"]{
 
 
 form{
-    height: 60px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    
 }
 
 .rating-container{
