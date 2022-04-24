@@ -156,7 +156,7 @@ button{
     color: var(--neutral-white);
     background-color: var(--primary-color);
 
-    
+    font-weight: 700;
     font-style: normal;
     font-size: 15px;
     line-height: 19px;
