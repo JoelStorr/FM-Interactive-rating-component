@@ -33,7 +33,7 @@ body{
 }
 
 .hidden{
-    display: none;
+    visibility: hidden;
 }
 
 /* SEC: Container Styling */
@@ -42,6 +42,7 @@ body{
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 32px;
     top: 50%;
     left: 50%;
@@ -51,5 +52,9 @@ body{
     height: 416px;
     background-image: radial-gradient(#232A34, #181E27);
     border-radius: 30px;
+    font-family: var(--font);
 }
 
+p{
+    font-size: var(--font-size-p);
+}
