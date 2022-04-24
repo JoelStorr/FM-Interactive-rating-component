@@ -7,7 +7,9 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/styles.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -22,32 +24,38 @@
 
 
   <!-- Rating state start -->
-  <div class="card rating-stage">
+  <div class="card rating-state hidden">
+
+    <div class="icon-container">
+      <i class="fa-solid fa-star"></i>
+    </div>
     <h1>How did we do?</h1>
 
     <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
-    <ul>
-      <li class="rating-val">1</li>
-      <li class="rating-val">2</li>
-      <li class="rating-val">3</li>
-      <li class="rating-val">4</li>
-      <li class="rating-val">5</li>
-    </ul>
-    <!-- NOTE: Not set whats better -->
     <form action="post">
-      <input type="checkbox" name="rat-1" id="rat-1">
-      <input type="checkbox" name="rat-2" id="rat-2">
-      <input type="checkbox" name="rat-3" id="rat-3">
-      <input type="checkbox" name="rat-4" id="rat-4">
-      <input type="checkbox" name="rat-5" id="rat-5">
+      <div class="rating-container">
+        <input type="radio" name="rat" id="rat-1">
+        <label for="rat-1"><span>1</span></label>
+        <input type="radio" name="rat" id="rat-2">
+        <label for="rat-2"><span>2</span></label>
+        <input type="radio" name="rat" id="rat-3">
+        <label for="rat-3"><span>3</span></label>
+        <input type="radio" name="rat" id="rat-4">
+        <label for="rat-4"><span>4</span></label>
+        <input type="radio" name="rat" id="rat-5">
+        <label for="rat-5"><span>5</span></label>
+
+      </div>
       <button type="submit">Submit</button>
     </form>
   </div>
   <!-- Rating state end -->
 
-  <div class="card thankyou-stat hidden">
+  <div class="card thankyou-state ">
+
+    <img src="./images/illustration-thank-you.svg" alt="" srcset="">
     <div id="selection-container">
       <p>You selected</p>
     </div>

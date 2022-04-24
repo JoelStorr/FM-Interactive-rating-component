@@ -40,9 +40,8 @@ body{
 
 .card{
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+
+    
     padding: 32px;
     top: 50%;
     left: 50%;
@@ -54,6 +53,111 @@ body{
     font-family: var(--font);
 }
 
+.rating-state{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 p{
     font-size: var(--font-size-p);
+}
+/* SEC C: Top ICON*/
+.icon-container{
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--neutral-dark-blue);
+}
+
+.icon-container i{
+    color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* SEC C: Checkbox Styling */
+input[type="radio"]{
+    /* visibility: hidden; */
+   /* z-index: -1; */
+    display: none;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+}
+
+
+form{
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.rating-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+label{
+    position: relative;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--neutral-dark-blue);
+}
+
+label:hover{
+    background-color: var(--neutral-medium-grey);
+}
+
+
+input:checked + label{
+    background-color: var(--primary-color);
+}
+
+label span{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+button{
+    text-align: center;
+    height: 45px;
+    padding: 10px;
+    margin-top: 32px;
+    border: none;
+    border-radius: 22.5px;
+    color: var(--neutral-white);
+    background-color: var(--primary-color);
+}
+
+button:hover{
+    color: var(--primary-color);
+    background-color: var(--neutral-white);
+}
+
+/* SEC: Thankyou side */
+
+.thankyou-state{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* Added when card changes */
+}
+
+img{
+    height: 108px;
+    width: 162px;
 }
