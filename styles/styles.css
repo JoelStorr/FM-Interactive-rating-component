@@ -16,3 +16,39 @@
     --font-size-p: 15px;
     --font: Overpass, sans-serif;
 }
+
+
+/* SEC: CSS Reste */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--neutral-very-dark-blue);
+    color: var(--neutral-white);
+}
+
+.hidden{
+    display: none;
+}
+
+/* SEC: Container Styling */
+
+.card{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 412px;
+    height: 416px;
+    background-image: radial-gradient(#232A34, #181E27);
+    border-radius: 30px;
+}
+
