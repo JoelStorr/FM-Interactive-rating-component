@@ -66,9 +66,13 @@ h1{
     line-height: 35px;
 }
 p{
-    font-size: var(--font-size-p);
     color: var(--neutral-light-grey);
     line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-size-p);
+    line-height: 24px;
+
 }
 /* SEC C: Top ICON*/
 .icon-container{
@@ -150,6 +154,13 @@ button{
     border-radius: 22.5px;
     color: var(--neutral-white);
     background-color: var(--primary-color);
+
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 2px;
+
 }
 
 button:hover{
