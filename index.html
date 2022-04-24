@@ -11,6 +11,7 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./script/app.js" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
@@ -24,7 +25,7 @@
 
 
   <!-- Rating state start -->
-  <div class="card rating-state hidden">
+  <div class="card rating-state">
 
     <div class="icon-container">
       <i class="fa-solid fa-star"></i>
@@ -34,26 +35,25 @@
     <p>Please let us know how we did with your support request. All feedback is appreciated
       to help us improve our offering!</p>
 
-    <form action="post">
+    <form id="rating-form">
       <div class="rating-container">
-        <input type="radio" name="rat" id="rat-1">
+        <input type="radio" name="rat" id="rat-1" value="1">
         <label for="rat-1"><span>1</span></label>
-        <input type="radio" name="rat" id="rat-2">
+        <input type="radio" name="rat" id="rat-2" value="2">
         <label for="rat-2"><span>2</span></label>
-        <input type="radio" name="rat" id="rat-3">
+        <input type="radio" name="rat" id="rat-3" value="3">
         <label for="rat-3"><span>3</span></label>
-        <input type="radio" name="rat" id="rat-4">
+        <input type="radio" name="rat" id="rat-4" value="4">
         <label for="rat-4"><span>4</span></label>
-        <input type="radio" name="rat" id="rat-5">
+        <input type="radio" name="rat" id="rat-5" value="5">
         <label for="rat-5"><span>5</span></label>
-
       </div>
       <button type="submit">Submit</button>
     </form>
   </div>
   <!-- Rating state end -->
 
-  <div class="card thankyou-state ">
+  <div class="card thankyou-state hidden ">
 
     <img src="./images/illustration-thank-you.svg" alt="" srcset="">
     <div id="selection-container">
@@ -68,7 +68,7 @@
   <!-- Thank you state end -->
 
 
-  <div class="attribution">
+  <div class="attribution hidden">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
