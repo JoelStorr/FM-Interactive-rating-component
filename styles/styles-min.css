@@ -41,8 +41,6 @@ body{
 .card{
     position: fixed;
 
-    
-    padding: 32px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -58,6 +56,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 32px;
 }
 
 p{
@@ -157,10 +156,27 @@ button:hover{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* Added when card changes */
+    padding: 45px 32px;
+    
 }
 
 img{
     height: 108px;
     width: 162px;
+}
+
+#select-disp{
+    padding: 4px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--primary-color);
+    background-color: var(--neutral-dark-blue);
+    border-radius: 22.5px;
+}
+
+.thankyou-state p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--neutral-light-grey);
 }
