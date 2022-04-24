@@ -1,0 +1,18 @@
+
+/* SEC: Import */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/*SEC: Setup CSS vars*/
+:root{
+    /*SEC C: Colors*/
+    --primary-color: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-grey: hsl(217, 12%, 63%);
+    --neutral-medium-grey: hsl(216, 12%, 54%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-dark-blue: hsl(216, 12%, 8%);
+
+    /*SEC C: Fonnts*/
+    --font-size-p: 15px;
+    --font: Overpass, sans-serif;
+}
