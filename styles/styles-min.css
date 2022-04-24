@@ -58,8 +58,13 @@ body{
     padding: 32px;
 }
 
+h1{
+    padding-top: 10px;
+}
 p{
     font-size: var(--font-size-p);
+    color: var(--neutral-light-grey);
+    line-height: 24px;
 }
 /* SEC C: Top ICON*/
 .icon-container{
